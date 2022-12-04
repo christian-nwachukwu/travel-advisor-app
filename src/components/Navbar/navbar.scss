@@ -21,20 +21,22 @@
         width: 100%;
         padding: 1rem;
         z-index: 1000;
-    }
+    
 
-    .logoDiv{
-        .logo{
-            color: var(--whiteColor);
-        font-weight: 500;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        }
+        .logoDiv{
+            .logo{
+                color: var(--whiteColor);
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
 
-        .icon{
-            color: var(--PrimaryColor);
-            font-size: 25px;
+
+                .icon{
+                    color: var(--PrimaryColor);
+                    font-size: 25px;
+                }
+            }    
         }
 
         @media screen and (max-width: 768px) {
@@ -49,27 +51,70 @@
                 box-shadow: 0 2px 4px rgba(209,209,209,0.904);
                 transition: .5s ease;
                 z-index: 1000;
-            }
 
-            .navLists{
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin: auto;
-            }
+                
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
 
-            .navItem{
-                padding: 1rem 0;
-            }
+                    .navItem{
+                        padding: 1rem 0;
 
-            .navLink{
-                color: var(--textColor);
-                font-size: .9rem;
-                font-weight: 600;
-                &:hover{
-                    color: var(--PrimaryColor);
-                    
+                        .navLink{
+                            color: var(--textColor);
+                            font-size: .9rem;
+                            font-weight: 600;
+                            &:hover{
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
+                        
+                    .headerBtns{
+                        flex-direction: column;
+                        .btn{
+                            margin-top: 1rem;
+
+                            a{
+                                font-weight: 600;
+
+                                &:hover{
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+
+                        .loginBtn{
+                            background: none;
+                            border: 1px solid var(--PrimaryColor);
+                            color: var(--PrimaryColor);
+
+                            a{
+                                color: var(--PrimaryColor);
+
+                            }
+
+                            &:hover{
+                                background: var(--HoverColor);
+                                a{
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+                    }
                 }
+
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--PrimaryColor);
+                    &:hover .icon{
+                        color: var(--HoverColor);
+                    }
+                }    
             }
         }
     }

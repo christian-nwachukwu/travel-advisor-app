@@ -41,6 +41,8 @@ li{
 
 .icon{
     font-size: 2rem;
+    cursor: pointer;
+    color: brown;
 }
 
 .flex{

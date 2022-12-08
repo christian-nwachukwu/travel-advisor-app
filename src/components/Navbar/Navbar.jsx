@@ -1,3 +1,4 @@
+import React from 'react'
 import './navbar.css'
 import {SiYourtraveldottv} from 'react-icons/si'
 import {AiFillCloseCircle} from 'react-icons/ai'
@@ -8,7 +9,7 @@ const Navbar = () => {
         <section className='navBarSection'>
             <div className='header'>
                 <div className='logoDiv'>
-                <a href="#" className="logo">
+                    <a href="#" className="logo">
                         <h1 className='flex'><SiYourtraveldottv className="icon"/>Safari</h1>
                     </a>   
                 </div>
@@ -46,12 +47,12 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='toggle'>
+                <div className='toggleNavbar'>
                     <TbGridDots className='icon'/>
                 </div>
             </div>
         </section>
-    );
+    )
 }
 
 export default Navbar;
